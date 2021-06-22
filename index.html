@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+
+    <header class>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <nav class="navbar justify-content-between">
+                <a class ="navbar-brand" href = "#">To-do List</a>
+                   <form class="form-inline ">
+                      <input class ="form-control mr-sm-2" type ="search" 
+                          placeholder ="Search" aria-label="Search" id="searchtextbox" />
+                   </form>
+              </nav>
+            </div>      
+         </div>  
+     </div>  
+    </header>
+
+    <section class="todo-outer">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-8">
+                    <h1>Welcome to My Todo List</h1>
+                    <div class="todo-inner">
+                        <div class="form-row">
+                            <div class="col-8 mr-sm-2">
+                                <input type="text" class="form-control"
+                                placeholder="Enter any task" id="addinput" />
+                                <input type="hidden" id ="saveindex">
+                            </div>
+                            <button type="button" class="btn btn-success mr-sm-2"
+                            id="addbtn">
+                               Add 
+                            </button>
+                            <button type="button" class="btn btn-success mr-sm-2"
+                            id="savebtn" style="display: none;">
+                               Save
+                            </button>
+                            <button type="button" class="btn btn-danger"
+                            id="deleteallbtn">
+                              Delete All
+                            </button>
+
+                        </div>
+                        <div class="to-do-output">
+                            <table class="table table-stripped mt-3 mb-0"
+                            id="addedlist">
+                               
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+ 
+    <script src="welcome.js"></script>
+</body> 
